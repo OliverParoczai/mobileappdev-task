@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1026772668866",
+    "project_id": "egyetem-4a251",
+    "storage_bucket": "egyetem-4a251.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026772668866:android:931d7974b3988863c9465b",
+        "android_client_info": {
+          "package_name": "hu.oliverparoczai.arfolyamok"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVEOMg9NHf-rHgrEAn6fRztcm2QEgDADk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
