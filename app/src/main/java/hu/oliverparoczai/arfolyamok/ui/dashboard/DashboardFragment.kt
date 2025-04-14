@@ -31,6 +31,7 @@ import org.simpleframework.xml.ElementList
 import org.simpleframework.xml.Root
 import org.simpleframework.xml.Serializer
 import org.simpleframework.xml.core.Persister
+import java.util.concurrent.TimeUnit
 
 class DashboardFragment : Fragment() {
 
@@ -41,14 +42,26 @@ class DashboardFragment : Fragment() {
     private val binding get() = _binding!!
 
     fun downloadXml(url: String): String? {
-        val client = OkHttpClient()
+        // Configure the OkHttpClient with timeouts
+        val client = OkHttpClient.Builder()
+            .connectTimeout(10, TimeUnit.SECONDS) // Set connection timeout
+            .readTimeout(30, TimeUnit.SECONDS)    // Set read timeout
+            .writeTimeout(15, TimeUnit.SECONDS)   // Set write timeout
+            .build()
+
         val request = Request.Builder().url(url).build()
-        client.newCall(request).execute().use { response ->
-            return if (response.isSuccessful) {
-                response.body.string()
-            } else {
-                null
+        return try {
+            client.newCall(request).execute().use { response ->
+                if (response.isSuccessful) {
+                    response.body?.string()
+                } else {
+                    null
+                }
             }
+        } catch (e: Exception) {
+            // Handle exceptions (e.g., timeout, network issues)
+            e.printStackTrace() // Log the exception or handle it as needed
+            null
         }
     }
 
@@ -90,7 +103,7 @@ class DashboardFragment : Fragment() {
         }
 
 
-        val url = "https://example.com/data.xml"
+        val url = "http://api.napiarfolyam.hu/?valuta=eur&bank=mnb&datum=20250401&datumend=20250414"
         GlobalScope.launch(Dispatchers.IO) {
             val xml = downloadXml(url)
             if (xml != null) {

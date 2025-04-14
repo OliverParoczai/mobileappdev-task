@@ -22,4 +22,8 @@
         android:name="hu.oliverparoczai.arfolyamok.ui.account.AccountFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="hu.oliverparoczai.arfolyamok.ui.login.LoginFragment"
+        android:label="LoginFragment" />
 </navigation>

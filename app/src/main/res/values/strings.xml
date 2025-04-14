@@ -5,8 +5,11 @@
     <string name="title_account">Account</string>
     <string name="welcome_user">Welcome, username</string>
     <string name="loginButton" >Login</string>
-    <string name="loginUserName" >Username</string>
+    <string name="loginEmail" >E-mail</string>
     <string name="loginPassword" >Password</string>
     <string name="loginTitle" >Login</string>
     <string name="forgotPassword">Forgot your password? Click here</string>
+    <string name="authentication_failed">Authentication failed.</string>
+    <string name="authentication_successful">Authentication successful.</string>
+    <string name="authentication_nodata">Please fill out the e-mail and password fields</string>
 </resources>

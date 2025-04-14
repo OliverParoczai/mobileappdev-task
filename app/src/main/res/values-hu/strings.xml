@@ -6,8 +6,11 @@
     <string name="title_account">Fiók</string>
     <string name="welcome_user">Üdvözöljük, username</string>
     <string name="loginButton">Bejelentkezés</string>
-    <string name="loginUserName">Felhasználónév</string>
+    <string name="loginEmail">E-mail</string>
     <string name="loginPassword">Jelszó</string>
     <string name="loginTitle">Bejelentkezés</string>
     <string name="forgotPassword">Elfelejtett jelszó? Kattints ide</string>
+    <string name="authentication_failed">Sikertelen bejelentkezés.</string>
+    <string name="authentication_successful">Sikeres bejelentkezés.</string>
+    <string name="authentication_nodata">Kérlek töltsd ki az e-mail és jelszó mezőket</string>
 </resources>
