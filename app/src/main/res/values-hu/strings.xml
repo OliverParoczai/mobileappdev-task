@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Árfolyamok</string>
+    <string name="title_home">Kezdőlap</string>
+    <string name="title_dashboard">Vezérlőpult</string>
+    <string name="title_account">Fiók</string>
+    <string name="welcome_user">Üdvözöljük, username</string>
+    <string name="loginButton">Bejelentkezés</string>
+    <string name="loginUserName">Felhasználónév</string>
+    <string name="loginPassword">Jelszó</string>
+    <string name="loginTitle">Bejelentkezés</string>
+    <string name="forgotPassword">Elfelejtett jelszó? Kattints ide</string>
+</resources>
