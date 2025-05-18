@@ -4,12 +4,30 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_account">Account</string>
     <string name="welcome_user">Welcome, username</string>
-    <string name="loginButton" >Login</string>
-    <string name="loginEmail" >E-mail</string>
-    <string name="loginPassword" >Password</string>
-    <string name="loginTitle" >Login</string>
+    <string name="loginButton">Login</string>
+    <string name="loginEmail">E-mail</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginTitle">Login/Register</string>
     <string name="forgotPassword">Forgot your password? Click here</string>
     <string name="authentication_failed">Authentication failed.</string>
     <string name="authentication_successful">Authentication successful.</string>
     <string name="authentication_nodata">Please fill out the e-mail and password fields</string>
+    <string name="registerButton">Register</string>
+    <string name="registration_failed">Registration failed.</string>
+    <string name="registration_successful">Registration successful.</string>
+    <string name="welcome_blank">"Welcome, "</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="upload_data">Upload Data</string>
+    <string name="upload_description">You can upload data from this page</string>
+    <string name="goBack">Go Back</string>
+    <string name="debug">Debug</string>
+    <string name="debug_description">You can debug the database system from this page</string>
+    <string name="activityAccess_title">Activity Access</string>
+    <string name="management">Management</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="currencyCode">Currency Code</string>
+    <string name="currencyRate" >Currency Rate</string>
+    <string name="upload">Upload</string>
 </resources>

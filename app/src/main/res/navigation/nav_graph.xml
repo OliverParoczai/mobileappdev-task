@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ManagementFragment">
+
+    <fragment
+        android:id="@+id/ManagementFragment"
+        android:name="hu.oliverparoczai.arfolyamok.ManagementFragment"
+        android:label="@string/management"
+        tools:layout="@layout/fragment_management" />
+</navigation>

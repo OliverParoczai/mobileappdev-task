@@ -58,6 +58,8 @@ dependencies {
     implementation(libs.firebase.auth.ktx)
     implementation(libs.androidx.datastore.core.android)
     implementation(libs.androidx.datastore.preferences)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.firebase.database.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

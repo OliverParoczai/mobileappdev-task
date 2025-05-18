@@ -17,6 +17,10 @@ import com.github.mikephil.charting.data.CandleDataSet
 import com.github.mikephil.charting.data.CandleEntry
 import hu.oliverparoczai.arfolyamok.R
 import hu.oliverparoczai.arfolyamok.databinding.FragmentHomeBinding
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.FirebaseFirestore
+import android.widget.Toast
+import hu.oliverparoczai.arfolyamok.model.CurrencyRate
 
 
 class HomeFragment : Fragment() {
@@ -26,6 +30,7 @@ class HomeFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+    private val firestore = FirebaseFirestore.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -52,6 +57,18 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun readCurrencyRates() {
+        firestore.collection("currencyRates").get()
+            .addOnSuccessListener { documents ->
+                val currencyRates = documents.mapNotNull { it.toObject(CurrencyRate::class.java) }
+                // Use the list of currency rates (e.g., display them in a RecyclerView)
+                Toast.makeText(requireContext(), "Fetched currency rates such as: ", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(requireContext(), "Failed to fetch currency rates", Toast.LENGTH_SHORT).show()
+            }
     }
 
     private fun addChart(){

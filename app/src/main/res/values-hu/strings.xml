@@ -8,9 +8,23 @@
     <string name="loginButton">Bejelentkezés</string>
     <string name="loginEmail">E-mail</string>
     <string name="loginPassword">Jelszó</string>
-    <string name="loginTitle">Bejelentkezés</string>
+    <string name="loginTitle">Bejelentkezés/Regisztráció</string>
     <string name="forgotPassword">Elfelejtett jelszó? Kattints ide</string>
     <string name="authentication_failed">Sikertelen bejelentkezés.</string>
     <string name="authentication_successful">Sikeres bejelentkezés.</string>
     <string name="authentication_nodata">Kérlek töltsd ki az e-mail és jelszó mezőket</string>
+    <string name="registerButton">Regisztráció</string>
+    <string name="registration_failed">Sikertelen regisztráció</string>
+    <string name="registration_successful">Sikeres regisztráció.</string>
+    <string name="welcome_blank">"Üdvözöllek, "</string>
+    <string name="upload_data">Adatok feltöltése</string>
+    <string name="upload_description">Erről az oldalról feltölthetsz adatokat</string>
+    <string name="goBack">Vissza</string>
+    <string name="debug">Hibakeresés</string>
+    <string name="debug_description">Innen ellenőrizheted az adatbázis működését</string>
+    <string name="activityAccess_title">Activity Hozzáférés</string>
+    <string name="management">Kezelés</string>
+    <string name="currencyCode">Valuta Kód</string>
+    <string name="currencyRate">Valuta Érték</string>
+    <string name="upload">Feltöltés</string>
 </resources>

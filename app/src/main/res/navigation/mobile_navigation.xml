@@ -18,12 +18,12 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_account"
-        android:name="hu.oliverparoczai.arfolyamok.ui.account.AccountFragment"
-        android:label="@string/title_account"
-        tools:layout="@layout/fragment_account" />
-    <fragment
-        android:id="@+id/loginFragment"
+        android:id="@+id/navigation_login"
         android:name="hu.oliverparoczai.arfolyamok.ui.login.LoginFragment"
-        android:label="LoginFragment" />
+        android:label="Login" />
+
+    <fragment
+        android:id="@+id/navigation_loggedin"
+        android:name="hu.oliverparoczai.arfolyamok.ui.loggedInAccount.LoggedInAccountFragment"
+        android:label="Account" />
 </navigation>

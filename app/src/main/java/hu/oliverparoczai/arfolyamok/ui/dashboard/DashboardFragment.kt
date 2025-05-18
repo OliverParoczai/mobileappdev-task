@@ -1,11 +1,13 @@
 package hu.oliverparoczai.arfolyamok.ui.dashboard
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Paint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -19,6 +21,10 @@ import com.github.mikephil.charting.data.CandleEntry
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
+import hu.oliverparoczai.arfolyamok.DebugActivity
+import hu.oliverparoczai.arfolyamok.ManagementActivity
+import hu.oliverparoczai.arfolyamok.R
+import hu.oliverparoczai.arfolyamok.UploadActivity
 import hu.oliverparoczai.arfolyamok.databinding.FragmentDashboardBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -113,6 +119,30 @@ class DashboardFragment : Fragment() {
                 }
             }
         }
+
+        val uploadDataButton: Button = binding.uploadDataButton
+
+        // Use safe call to set the click listener
+        uploadDataButton.setOnClickListener {
+            // Start the UploadActivity
+            val intent = Intent(activity, UploadActivity::class.java)
+            startActivity(intent)
+        }
+
+        val debugButton: Button = binding.debugButton
+        debugButton.setOnClickListener {
+            // Start the UploadActivity
+            val intent = Intent(activity, DebugActivity::class.java)
+            startActivity(intent)
+        }
+
+        val managementButton: Button = binding.managementButton
+        managementButton.setOnClickListener {
+            // Start the UploadActivity
+            val intent = Intent(activity, ManagementActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
         return root
